@@ -1,0 +1,234 @@
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.e_nav{
+    width: 100%;
+    min-height: 100px;
+    float: left;
+    background: #333;
+    
+}
+
+.nav_logo{
+    width: 10%;
+    min-height: 100px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_logo img{
+    max-width: 70px;
+    max-height: 70px;
+}
+
+.e_main{
+    width: 100%;
+    min-height: 86vh;
+    float: left;
+    background: #333;
+    
+}
+
+.left{
+    width: 100%;
+    min-height: 86vh;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.left .name{
+    color: #ff4522;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 50px;
+    float: left;
+}
+
+.back{
+    background: #a7afbd;
+}
+
+.left .job{
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 10px;
+    margin-left: 46px;
+    margin-bottom: 30px;
+}
+
+.services p{
+    font-size: 17px;
+    color: white;
+    margin-top: 5px;
+    margin-left: 50px;
+    
+}
+
+.services span{
+    font-size: 17px;
+    color: white;
+    margin-left: 15px;
+ 
+}
+
+.numbers_1 .ten{
+    float: left;
+    font-size: 45px;
+    font-weight: 600;
+    color: #fff;;
+    line-height: 1.2;
+    font-family: "Poppins";
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.numbers_1 .ten_text {
+    margin-top: 8px;
+    margin-left: 15px;
+    float: left;
+    font-family: "Poppins";
+    line-height: 1.4;
+    font-size: 14px;
+    color: #a7afbd;
+    margin-top: 27px;
+}
+
+.numbers_2 .ten{
+    float: left;
+    font-size: 45px;
+    font-weight: 600;
+    color: #fff;;
+    line-height: 1.2;
+    font-family: "Poppins";
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.numbers_2 .ten_text {
+    margin-top: 8px;
+    margin-left: 15px;
+    float: left;
+    font-family: "Poppins";
+    line-height: 1.4;
+    font-size: 14px;
+    color: #a7afbd;
+    margin-top: 27px;
+}
+
+
+
+.arrow{
+    color: #fff;
+    float: left;
+    font-size: 40px;
+    animation: scroll ease 2s infinite;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(20px);
+    }
+}
+
+.right{
+    width: 100%;
+    min-height: 86vh;
+    float: left;
+}
+
+.right .shape_1{
+    background-color: #ff4522;
+    transform: rotate(-6deg);
+    border-radius: 10px;
+    width: 390px;
+    height: 528px;
+    position: absolute;
+    top: 23px;
+    bottom: -23px;
+    left: -95px;
+    background-color: #ff4522;
+    z-index: 1;
+    float: left;
+    margin-left: 200px;
+}
+
+.right .shape_2{
+    background-image: url("../img/photo_1.jpg");
+    background-size: cover;
+    transform: rotate(7deg);
+    width: 390px;
+    height: 528px;
+    position: absolute;
+    background-repeat: no-repeat;
+    
+    z-index: 2;
+    border-radius: 10px;
+    float: left;
+   
+    
+}
+
+.shapes{
+    float: left;
+    padding-left: 200px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.numbers{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.e_main_1{
+    width: 100%;
+    height: 100vh;
+    background: #494b50;
+    float: left;
+}
+
+
+
+
+.card{
+    border-radius: 10px;
+    background-color: transparent;
+    width: 376px;
+    height: 422px;
+   cursor: pointer;
+}
+
+
+.card-body{
+    border-radius: 10px;
+    width: 372px;
+    height: 422px;
+    background-image: url("https://www.planetware.com/wpimages/2019/11/canada-in-pictures-beautiful-places-to-photograph-morraine-lake.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+
