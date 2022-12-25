@@ -2,9 +2,32 @@
 body {
     margin: 0 auto;
     padding: 0;
-    
+ 
 }
 
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:  #494b50; 
+    
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#adb5bd; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:#adb5bd; 
+  }
 
 .e_nav_1{
     width: 100%;
@@ -783,8 +806,9 @@ body {
 }
 
 
-.box_1:hover{
-    background: #ff4522;
+
+.box_1_text i:hover{
+    color: white;
 }
 
 .left_5_text{
@@ -811,8 +835,9 @@ body {
     
 }
 
-.ikon:hover{
-    color: white;
+.box_1:hover{
+    background: #ff4522;
+    
 }
 
 .info_1{
@@ -1039,6 +1064,7 @@ body {
   header {
 	display: flex;
 	justify-content: flex-start;
+    
 }
 .menu-btn {
 	width: 40px;
@@ -1074,6 +1100,9 @@ body {
 	top: calc(50% + 0);
     
 }
+
+
+
 
 .menu {
 	position: fixed;
@@ -1163,10 +1192,7 @@ body {
         width: 100%;
     }
 
-    .txt_4{
-    
-    }
-
+   
     #skill{
        width: 80%;
       
@@ -1304,10 +1330,48 @@ body {
 
 }
 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+    
+
+    .left_4{
+        width: 720px;
+        
+    }
+
+    .left_4_info{
+       
+        margin-left: 10px;
+    }
+
+
+    .e_main_4_txt{
+        margin-left: -40px;
+    }
+
+    .time{
+        width: 730px;
+        
+        margin-left: -50px;
+    }
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-   .e_nav_1{display: none;}
+   
+    .head{
+        
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 100px;
+        margin-top: -50px;
+    }
 
+    
+   
     .right .shape_1{
         display: none;
     }
@@ -1464,7 +1528,7 @@ body {
 
     .e_main_6_txt{
        
-        margin-left: 30px;
+        margin-left: 0px;
         width: 90%;
         height: 80px;
         display: flex;
@@ -1479,7 +1543,7 @@ body {
         margin-top: -30px;
         display: flex;
         justify-content: flex-start;
-        margin-left: 130px;
+        margin-left: 110px;
     }
 
 
@@ -1487,12 +1551,24 @@ body {
         margin-left: -20px;
     }
     
-   
+    .e_main_4{
+        background: red;
+        display: flex;
+       flex-direction: column-reverse;
+    }
+
+    
 
     .swiper-wrapper img{
         width: 90%;
-       
-       
+    }
+
+    .topnav{
+        display: fixed;
+    }
+
+    .left{
+        margin-top: 20px;
     }
 }
 
