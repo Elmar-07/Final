@@ -1,11 +1,17 @@
 
 
 
+
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
     grabCursor:"true",
 
+    
+      autoplay: {
+          delay: 6000,
+        },
+        
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -29,12 +35,12 @@
 
     992: {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 00,
   },
 
       1024: {
           slidesPerView: 3,
-          spaceBetween: 0,
+          spaceBetween: 20,
       },
       
 
@@ -85,29 +91,22 @@ function kura_tm_my_load(){
 
 
 
-// $(function() {
-//     $('#navbar.navbar-right ul li a').click(function() {
-//       //clear active status of any parent LI's
-//       $('#navbar.navbar-right ul li').removeClass('active');
-
-//       // store id of new active sub-nav
-//       var currSub = $(this).parent();
-//       currSub.addClass('active')
-//       var id = currSub.attr('id');
-
-//       // clear active status of any sub-nav list
-//       $('#subnavbar ul.navbar-nav').removeClass('active');
-
-//       // set selected sub-nav to active
-//       $('.' + id).addClass('active');
-
-//       console.log($('.' + id).attr('class'));
-
-//     });
-
-//   });
 
 
 
 
+$(document).on("scroll", function() {
+  var pageTop = $(document).scrollTop();
+  var pageBottom = pageTop + $(window).height();
+  var tags = $(".tag");
 
+  for (var i = 0; i < tags.length; i++) {
+    var tag = tags[i];
+
+    if ($(tag).position().top < pageBottom) {
+      $(tag).addClass("visible");
+    } else {
+      $(tag).removeClass("visible");
+    }
+  }
+});
