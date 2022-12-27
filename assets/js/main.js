@@ -6,7 +6,7 @@
     slidesPerView: 3,
     spaceBetween: 30,
     grabCursor:"true",
-
+ 
     
       autoplay: {
           delay: 6000,
@@ -17,6 +17,7 @@
       clickable: true,
       dynamicBullets: "true"
     },
+  
 
     breakpoints: {
       0: {
@@ -35,17 +36,28 @@
 
     992: {
       slidesPerView: 2,
-      spaceBetween: 00,
+      spaceBetween: 30,
   },
 
       1024: {
           slidesPerView: 3,
-          spaceBetween: -6,
+          spaceBetween: 20,
       },
       
 
+      1300: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+    },
+
     },
   
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
    });
    
 
@@ -110,3 +122,8 @@ $(document).on("scroll", function() {
     }
   }
 });
+
+
+
+
+

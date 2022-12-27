@@ -51,25 +51,26 @@ body {
     font-size: 16px;
 }
 
-.nav-item a:hover{
-    color: #ff4522;
-    
-}
 
+.mynav-link {
+    color: #fff !important;
+  }
 
 .active{
     background-color:transparent !important;
     color: #ff4522 !important;
 }
 
-.mynav-link{
-    color: #fff !important;
-}
-
 
 .mynav-link:focus{
-    color: #ff4522;
+    color: #ff4522 !important;
 }
+
+ .nav-item a:hover {
+    color: #f75023 !important;
+  }
+
+
 
 .nav_logo{
     min-width: 10%;
@@ -780,7 +781,7 @@ body {
 }
 
 .word {
-    width: 70%;
+    width: 90%;
     height: 88px;
     color: #fff;
     font-size: 18px;
@@ -789,12 +790,13 @@ body {
     justify-content: flex-start;
     align-items: center;
     float: left;
+    
 }
 
 
 
 .money_2{
-     width:30%;
+     width:10%;
      height: 88px;
     color: white;
     font-size: 18px;
@@ -803,13 +805,15 @@ body {
     align-items: center;
     justify-content: flex-end;
     margin-right: 20px; 
+   
 }
 
 
-
-.box_1_text i:hover{
+.box_1_text :hover i{
     color: white;
+    transition: 0.5s;
 }
+
 
 .left_5_text{
     width: 100%;
@@ -835,7 +839,11 @@ body {
     
 }
 
-.box_1:hover{
+.box_1{
+    transition: 0.5s;
+}
+
+.box_1:hover {
     background: #ff4522;
     
 }
@@ -999,9 +1007,9 @@ body {
 .swiper {
     width: 100%;
     height: 407px;
-  
-   
-
+    
+   margin-left: 30px;
+    
   }
 
 
@@ -1039,13 +1047,15 @@ body {
 
   .swiper-slide img {
     display: block;
-    width: 363px;
+    width: 359px;
     height: 407px;
     object-fit: cover;
     border-radius: 10px;
     background: transparent;
     
   }
+
+
 
 
   
@@ -1184,6 +1194,9 @@ body{
     opacity: 1;
     transform: translate(0, 0);
   }
+
+
+  
   
 
   
@@ -1194,9 +1207,13 @@ body{
 }
 
 
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media  (min-width: 769px) and (max-width: 1000px){
     
+    
+
+
     .right .shape_1{
         display: none;
     }
@@ -1274,10 +1291,14 @@ body{
     /* Medium devices (landscape tablets, 768px and up) */
     @media (min-width: 601px) and  (max-width: 768px) {
 
-    .e_nav_1{
-        display: none;
-    }
-
+        .head{
+        
+            width: 80%;
+            display: flex;
+            justify-content: flex-end;
+            margin-left: 100px;
+            margin-top: -50px;
+        }
     .e_main_1{
         width: 100%;
        
@@ -1303,6 +1324,15 @@ body{
         
     }
 
+    .swiper-slide img {
+        display: block;
+        width: 9px;
+        height: 407px;
+        object-fit: cover;
+        border-radius: 10px;
+        background: transparent;
+        
+      }
     
 
    #timeline{
@@ -1472,16 +1502,10 @@ body{
         position: static;
         margin-top: 0px;
         margin-left: -200px;
-        
+        width: 410px;
     }
 
-    .right{
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
+    
 
     .e_main_4_txt{
         
@@ -1598,7 +1622,8 @@ body{
         display: flex;
         justify-content: start;
         height: 400px;
-       
+        
+        width: 520px;
     }
 
     .inputs{
@@ -1654,6 +1679,7 @@ body{
        margin-top: -50px;
        justify-content: flex-start;
         height: 400px;
+        
       
     }
     .inp_1{
@@ -1770,7 +1796,7 @@ body{
        
     }
     .menu.active {
-        transform: translateX(5%);
+        transform: translateX(4%);
         
     }
     
@@ -1786,13 +1812,30 @@ body{
 
 
     .nav_logo{
-        min-width: 30%;
+        min-width: 27%;
          min-height: 30px;
         float: left;
         display: flex;
         justify-content: center;
         align-items: flex-end;
        
+    }
+    .swiper-slide img {
+        
+        width: 405px;
+        margin-left: -38px;
+      }
+
+    
+
+    .left_txt {
+        margin-left: 28px;
+        width: 440px;
+    }
+
+    .job{
+        font-size: 12px;
+        
     }
 }
 
