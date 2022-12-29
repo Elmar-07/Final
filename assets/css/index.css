@@ -1896,7 +1896,7 @@ body{
         position: fixed;
         top: 50px;
         right: 0px;
-        width: 100%;
+        width: 520px;
         height: 100%;
         padding: 12px;
         transform: translateX(100%);
@@ -1904,18 +1904,20 @@ body{
        
     }
     .menu.active {
-        transform: translateX(4%);
+        transform: translateX(2%);
         
     }
     
-    .menu li {
+    .menu ul {
         list-style-type: none;
+        background: #303134;
     }
     
     .menu ul li{
-        
+        margin-left: 32px;
         text-decoration: none;
         background: #303134;
+        
     }
 
 
