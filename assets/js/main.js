@@ -36,7 +36,7 @@
 
     992: {
       slidesPerView: 2,
-      spaceBetween: 30,
+      spaceBetween: 20,
   },
 
       1024: {
