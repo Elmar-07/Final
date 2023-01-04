@@ -1309,14 +1309,15 @@ body{
         justify-content: center;
         align-items: center;
         position: static;
-        margin-top: 0px;
-        margin-left: -200px;
-      
+        margin-top: 20px;
+        margin-left: -220px;
+        width: 450px;
+        height: 600px;
     }
 
     .left{
         margin-top: 20px;
-        
+        margin-left: -30px;
     }
 
     .sw{
@@ -1353,7 +1354,7 @@ body{
     }
 
     .left_4{
-        width: 950px;  
+        width: 890px;  
         
     }
 
@@ -1391,11 +1392,27 @@ body{
     .e_main_6_txt{
         margin-left: 14px;
     }
-
+    .right_5{
+        
+        margin-left: 25px;
+    }
 
     .menu.active {
         transform: translateX(32%);
         
+    }
+    
+    .right_1{
+        margin-left: -18px;
+    }
+
+    .box_1{
+        width: 400px;
+        
+    }
+
+    .e_main_6_icon{
+        margin-left: 10px;
     }
 }
 
